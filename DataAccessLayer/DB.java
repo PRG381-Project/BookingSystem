@@ -3,5 +3,5 @@ import java.io.*;
 
 public class DB 
 {
-     //Hello
+     
 }

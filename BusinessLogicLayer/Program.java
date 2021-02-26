@@ -6,5 +6,5 @@ import DataAccessLayer.DB;
 
 public class Program
 {
-    //Hi
+    
 }
