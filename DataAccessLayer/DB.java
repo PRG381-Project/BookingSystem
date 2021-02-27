@@ -1,6 +1,7 @@
 package DataAccessLayer;
 import java.io.*;
 import java.io.FileWriter;
+import BusinessLogicLayer.Booking;
 
 
 public class DB 
