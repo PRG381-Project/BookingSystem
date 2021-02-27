@@ -18,9 +18,9 @@ public class Booking
         this.dessert = dessert;
     }
 
-    public int getAmount()
+    public Booking()
     {
-        return this.amountOfPeople;
+
     }
 
     @Override
@@ -29,9 +29,7 @@ public class Booking
         return String.format("Amount of People: " + this.amountOfPeople + "\t Adult meal: " + this.adultMeal + "\t Kids meal:" + this.kidsMeal + " Drink: " + this.drink + "\t Dessert: " + this.dessert); 
     } 
 
-
-
-    public ArrayList<Booking> addBooking()
+    public static ArrayList<Booking> addBooking()
     {
         ArrayList<Booking> bookingList = new ArrayList<Booking>();
         // Booking newItem = //object coming from presentation layer;

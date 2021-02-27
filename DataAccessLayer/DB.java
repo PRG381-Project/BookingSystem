@@ -17,8 +17,8 @@ public class DB
 
         Booking bk;  //instansiated class named Booking
         Event ev;     //instansiated class named Event
-        
-        bkList.addAll(bk.addBooking());
+
+        bkList.addAll(Booking.addBooking());
         
         FileWriter fw = new FileWriter("text.txt");   //FileWriter opening connection to the text file
 
