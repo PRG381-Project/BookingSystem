@@ -1,7 +1,7 @@
 package BusinessLogicLayer;
 import java.util.*;
 
-public abstract class Event 
+public class Event 
 {
     String eventType;
     Date eventDate;
@@ -14,9 +14,9 @@ public abstract class Event
         this.eventAddress = ea;
     }
 
-    public abstract String getType();
-
-    public abstract Date getDate();
-
-    public abstract String getAddress();
+    @Override
+    public String toString() 
+    { 
+        return String.format("Event type: " + this.eventType + "\t Event date: " + this.eventDate + "\t Event address: " + this.eventAddress); 
+    } 
 }

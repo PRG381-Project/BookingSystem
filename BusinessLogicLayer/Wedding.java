@@ -11,23 +11,5 @@ public class Wedding extends Event {
         this.eventDate = dt;
         this.eventAddress = ea;        
     }
-
-    @Override
-    public String getType() 
-    {        
-        return this.eventType;
-    }
-
-    @Override
-    public Date getDate() 
-    {
-        return this.eventDate;
-    }
-
-    @Override
-    public String getAddress() 
-    {
-        return this.eventAddress;
-    }
     
 }
