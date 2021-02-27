@@ -6,13 +6,11 @@ import BusinessLogicLayer.Booking;
 
 public class DB 
 {
+    public static void main(String[] args) throws IOException 
+    {
 
-    
-
-    public static void main(String[] args) throws IOException {
-
-        Booking bk = new Booking();  //instansiated class named Booking
-        Event ev = new Event();     //instansiated class named Event
+        Booking bk;  //instansiated class named Booking
+        //Event ev;     //instansiated class named Event
         
         FileWriter fw = new FileWriter("text.txt");   //FileWriter opening connection to the text file
 
