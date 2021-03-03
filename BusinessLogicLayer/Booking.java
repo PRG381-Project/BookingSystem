@@ -33,7 +33,7 @@ public class Booking
     public static ArrayList<Booking> addBooking(Booking b)
     {
         ArrayList<Booking> bookingList = new ArrayList<Booking>();
-        Booking newItem = b;//object coming from presentation layer;
+        Booking newItem = b; //presentation layer object;
         bookingList.add(newItem);
         return bookingList;
     }

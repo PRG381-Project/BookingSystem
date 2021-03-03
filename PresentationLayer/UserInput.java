@@ -13,7 +13,8 @@ public class UserInput
     private static String drink;
     private static String dessert;
 
-    public static void main(String[] args) {
+    public Booking getInfo()
+        {
         Scanner scan = new Scanner(System.in);
         System.out.println("Enter the amount of people attending the event:");
         amountOfPeople = Integer.parseInt(scan.nextLine());
@@ -31,10 +32,8 @@ public class UserInput
         dessert = scan.nextLine();
         scan.close();
 
-    }
-
-    public Booking sendBookingInfo()
-    {
-
-    }
+        Booking b = new Booking(amountOfPeople, adultMeal, kidsMeal, drink, dessert);
+        return b;
+        }
+ 
 }
