@@ -1,4 +1,5 @@
 package BusinessLogicLayer;
+import PresentationLayer.*;
 import java.util.*;
 
 public class Booking
@@ -29,11 +30,11 @@ public class Booking
         return String.format("Amount of People: " + this.amountOfPeople + "\t Adult meal: " + this.adultMeal + "\t Kids meal:" + this.kidsMeal + " Drink: " + this.drink + "\t Dessert: " + this.dessert); 
     } 
 
-    public static ArrayList<Booking> addBooking()
+    public static ArrayList<Booking> addBooking(Booking b)
     {
         ArrayList<Booking> bookingList = new ArrayList<Booking>();
-        // Booking newItem = //object coming from presentation layer;
-        // bookingList.add(newItem);
+        Booking newItem = b;//object coming from presentation layer;
+        bookingList.add(newItem);
         return bookingList;
     }
 
