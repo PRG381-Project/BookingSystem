@@ -13,9 +13,6 @@ public class DB
         ArrayList<Booking> bkList = new ArrayList<Booking>();
         ArrayList<Event> evList = new ArrayList<Event>();
 
-        Booking bk;  //instansiated class named Booking
-        Event ev;     //instansiated class named Event
-
         bkList.addAll(blist);
         
         FileWriter fw = new FileWriter("bookingInfo.txt",true);   //FileWriter opening connection to the text file
