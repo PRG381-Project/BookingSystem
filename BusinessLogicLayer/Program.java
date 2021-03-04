@@ -25,25 +25,25 @@ public class Program
         //     System.out.print("Total adult's meal price: " + newPrice);
         // }
 
-        while(loop == true)
+        while(loop.equals(true))
         {
+            //Runtime.getRuntime().exec("cls");
             Booking bookInfo = new Booking();
-            UserInput ui = new UserInput();  
+            UserInput ui = new UserInput();
+            DB data = new DB();  
             
             bookInfo = ui.getInfo();        
-            tempList = Booking.addBooking(bookInfo);
+            tempList = Booking.addBooking(bookInfo);            
+            data.retrieveFromBLL(tempList);
 
             System.out.println("Type NO to exit or YES to add another booking");
             String answer = scan.nextLine();
-            if(answer.toLowerCase() == "no")
+
+            if(answer.toLowerCase().equals("no"))
             {
                 loop = false;
-                break;
             }
         }
-        scan.close();
-        
-        DB data = new DB();
-        data.retrieveFromBLL(tempList);
+        scan.close();           
     }
 }
