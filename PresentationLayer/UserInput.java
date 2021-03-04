@@ -1,11 +1,12 @@
 package PresentationLayer;
 
+import java.io.Console;
+import java.io.IOException;
 import java.util.Scanner;
 
 import BusinessLogicLayer.Booking;
 
-public class UserInput 
-{
+public class UserInput {
 
     private static int amountOfPeople;
     private static String adultMeal;
@@ -13,9 +14,10 @@ public class UserInput
     private static String drink;
     private static String dessert;
 
-    public Booking getInfo()
+    public Booking getInfo() throws IOException
         {
         Scanner scan = new Scanner(System.in);
+
         System.out.println("Enter the amount of people attending the event:");
         amountOfPeople = Integer.parseInt(scan.nextLine());
 
@@ -30,7 +32,6 @@ public class UserInput
 
         System.out.println("Enter dessert of choice");
         dessert = scan.nextLine();
-        scan.close();
 
         Booking b = new Booking(amountOfPeople, adultMeal, kidsMeal, drink, dessert);
         return b;

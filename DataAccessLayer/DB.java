@@ -18,9 +18,9 @@ public class DB
 
         bkList.addAll(blist);
         
-        FileWriter fw = new FileWriter("bookingInfo.txt");   //FileWriter opening connection to the text file
+        FileWriter fw = new FileWriter("bookingInfo.txt",true);   //FileWriter opening connection to the text file
 
-        fw.append(bkList.toString());
+        fw.write(bkList.toString()+"\n");
 
         // for(int i = 0; i < bkList.size(); i++)//for loop iterating through arrayList, writing each entry to the text file
         // { 
