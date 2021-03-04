@@ -22,16 +22,6 @@ public class DB
 
         fw.write(bkList.toString()+"\n");
 
-        // for(int i = 0; i < bkList.size(); i++)//for loop iterating through arrayList, writing each entry to the text file
-        // { 
-            
-        // }
-
-        // for(int i = 0; i < ev.Event.size(); i++) //for loop iterating through arrayList, writing each entry to the text file
-        // { 
-        //     fw.write(ev.Event.get(i));
-        // }
-
         fw.close(); //closing the connection to the text file. 
     }     
 }
