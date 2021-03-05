@@ -1,15 +1,16 @@
 package BusinessLogicLayer;
 import java.util.*;
 import java.io.IOException;
+import java.text.ParseException;
 
 import DataAccessLayer.DB;
 import PresentationLayer.UserInput;
 
-public class Program
-{
-    public static void main(String[] args) throws IOException 
+public class Program {
+    public static void main(String[] args) throws IOException, ParseException 
     {
         ArrayList<Booking> tempList = new ArrayList<Booking>();
+        ArrayList<Event> evList = new ArrayList<Event>();
         Boolean loop = true;        
         Scanner scan = new Scanner(System.in);
 
@@ -31,10 +32,15 @@ public class Program
             Booking bookInfo = new Booking();
             UserInput ui = new UserInput();
             DB data = new DB();  
+            Event eventDetails = new Event();
             
-            bookInfo = ui.getInfo();        
-            tempList = Booking.addBooking(bookInfo);            
-            data.retrieveFromBLL(tempList);
+            eventDetails = ui.getEvent(); 
+            evList = Event.addEvent(eventDetails);
+
+            bookInfo = ui.getInfo();             
+            tempList = Booking.addBooking(bookInfo);
+
+            data.retrieveFromBLL(tempList, evList);
 
             System.out.println("Type NO to exit or YES to add another booking");
             String answer = scan.nextLine();

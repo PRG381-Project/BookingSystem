@@ -1,5 +1,0 @@
-[Amount of People: 20	 Adult meal: Pasta	 Kids meal:Lasagne Drink: Water	 Dessert: Cake]
-[Amount of People: 15	 Adult meal: Steak	 Kids meal:Salad Drink: Coke	 Dessert: Milk tart]
-[Amount of People: 40	 Adult meal: Burgers	 Kids meal:Pancakes Drink: Sprite	 Dessert: Custard slice]
-[Amount of People: 25	 Adult meal: Tacos	 Kids meal:Salad Drink: Tea	 Dessert: Cake]
-[Amount of People: 12	 Adult meal: Burrito	 Kids meal:Chicken wings Drink: Coke	 Dessert: Chocolate mousse]
