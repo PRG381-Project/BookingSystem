@@ -46,7 +46,6 @@ public class Program {
 
             System.out.println("Type NO to exit or YES to add another booking");
             String answer = scan.nextLine();
-            //System.out.println("Your total price is: R" + i.TotPrice + ".00");
 
             if(answer.toLowerCase().equals("no"))
             {
