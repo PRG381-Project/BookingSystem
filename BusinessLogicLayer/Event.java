@@ -14,6 +14,19 @@ public class Event
         this.eventAddress = ea;
     }
 
+    public Event()
+    {
+
+    }
+
+    public static ArrayList<Event> addEvent(Event e)
+    {
+        ArrayList<Event> eventList = new ArrayList<Event>();
+        Event newItem = e; //presentation layer object;
+        eventList.add(newItem);
+        return eventList;
+    }
+
     @Override
     public String toString() 
     { 
