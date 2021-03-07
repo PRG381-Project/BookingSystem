@@ -1,0 +1,1 @@
+[Amount of People: 10	 Adult meal: dinner	 Kids meal:chicken Drink: coke	 Dessert: cake] [Event type: Wedding	 Event date: Sun Feb 02 00:00:00 CAT 2020	 Event address: 5 blablabla]
