@@ -40,18 +40,18 @@ public class UserInput {
         System.out.println("Steak & Wedges: R110");
         adultMeal = scan.nextLine();
         try{
-            if(adultMeal == "Burgers"){
-                TotPrice = TotPrice + 30;
-            }else if(adultMeal == "Pasta"){
-                TotPrice = TotPrice + 50;
-            }else if(adultMeal == "Pizza"){
-                TotPrice = TotPrice + 65;
-            }else if(adultMeal == "Salad"){
-                TotPrice = TotPrice + 30;
-            }else if(adultMeal == "Fish & Chips"){
-                TotPrice = TotPrice + 70;
-            }else if(adultMeal == "Steak & Wedges"){
-                TotPrice = TotPrice + 110;
+            if(adultMeal.equals("Burgers")){
+                TotPrice += 30;
+            }else if(adultMeal.equals("Pasta")){
+                TotPrice =+ 50;
+            }else if(adultMeal.equals("Pizza")){
+                TotPrice =+ 65;
+            }else if(adultMeal.equals("Salad")){
+                TotPrice =+ 30;
+            }else if(adultMeal.equals("Fish & Chips")){
+                TotPrice =+ 70;
+            }else if(adultMeal.equals("Steak & Wedges")){
+                TotPrice =+ 110;
             }
 
         }catch(Exception e){
@@ -70,18 +70,18 @@ public class UserInput {
         System.out.println("Mac & Cheese: R45");
         kidsMeal = scan.nextLine();
         try{
-            if(kidsMeal == "Burgers"){
-                TotPrice = TotPrice + 20;
-            }else if(kidsMeal == "Fish Fingers"){
-                TotPrice = TotPrice + 25;
-            }else if(kidsMeal == "Pizza"){
-                TotPrice = TotPrice + 50;
-            }else if(kidsMeal == "Chips"){
-                TotPrice = TotPrice + 15;
-            }else if(kidsMeal == "Fish & Chips"){
-                TotPrice = TotPrice + 50;
-            }else if(kidsMeal == "Mac & Cheese"){
-                TotPrice = TotPrice + 45;
+            if(kidsMeal.equals("Burgers")){
+                TotPrice =+ 20;
+            }else if(kidsMeal.equals("Fish Fingers")){
+                TotPrice =+ 25;
+            }else if(kidsMeal.equals("Pizza")){
+                TotPrice =+ 50;
+            }else if(kidsMeal.equals("Chips")){
+                TotPrice =+ 15;
+            }else if(kidsMeal.equals("Fish & Chips")){
+                TotPrice =+ 50;
+            }else if(kidsMeal.equals("Mac & Cheese")){
+                TotPrice =+ 45;
             }
 
         }catch(Exception e){
@@ -98,18 +98,18 @@ public class UserInput {
         
         drink = scan.nextLine();
         try{
-            if(drink == "Coke"){
-                TotPrice = TotPrice + 15;
-            }else if(drink == "Cream Soda"){
-                TotPrice = TotPrice + 15;
-            }else if(drink == "Fanta"){
-                TotPrice = TotPrice + 15;
-            }else if(drink == "Wine"){
-                TotPrice = TotPrice + 20;
-            }else if(drink == "Whiskey"){
-                TotPrice = TotPrice + 34;
-            }else if(drink == "Beer"){
-                TotPrice = TotPrice + 15;
+            if(drink.equals("Coke")){
+                TotPrice =+ 15;
+            }else if(drink.equals("Cream Soda")){
+                TotPrice =+ 15;
+            }else if(drink.equals("Fanta")){
+                TotPrice =+ 15;
+            }else if(drink.equals("Wine")){
+                TotPrice =+ 20;
+            }else if(drink.equals("Whiskey")){
+                TotPrice =+ 34;
+            }else if(drink.equals("Beer")){
+                TotPrice =+ 15;
             }
 
         }catch(Exception e){
@@ -124,21 +124,25 @@ public class UserInput {
         dessert = scan.nextLine();
         
         try{
-            if(dessert == "Ice Cream"){
-                TotPrice = TotPrice + 15;
-            }else if(dessert == "Chocolate pudding"){
-                TotPrice = TotPrice + 25;
-            }else if(dessert == "Cheese cake"){
-                TotPrice = TotPrice + 20;
-            }else if(dessert == "Chocolate Moose"){
-                TotPrice = TotPrice + 20;
+            if(dessert.equals("Ice Cream")){
+                TotPrice =+ 15;
+            }else if(dessert.equals("Chocolate pudding")){
+                TotPrice =+ 25;
+            }else if(dessert.equals("Cheese cake")){
+                TotPrice =+ 20;
+            }else if(dessert.equals("Chocolate Moose")){
+                TotPrice =+ 20;
             }
         }catch(Exception e){
             System.out.println(e.toString());
         }
+
+        
         if(amountOfPeople >= 40){
             TotPrice =  TotPrice * 0.85;
-        }
+        }  
+        
+        System.out.println("Total cost: " + TotPrice);
 
         Booking b = new Booking(amountOfPeople, adultMeal, kidsMeal, drink, dessert);
         return b;
