@@ -1,0 +1,1 @@
+[Amount of People: 50	 Adult meal: Pasta	 Kids meal:Chips Drink: Fanta	 Dessert: Cheese cake] [Event type: Business event	 Event date: Tue Oct 05 00:00:00 SAST 2021	 Event address: 26 Long Road]
