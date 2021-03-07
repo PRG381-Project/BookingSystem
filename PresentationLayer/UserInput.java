@@ -21,7 +21,7 @@ public class UserInput {
     private static String eventType;
     private static String eventDate;
     private static String eventAddress;
-    public int TotPrice = 1000;
+    public double TotPrice = 1000;
 
     public Booking getInfo() throws IOException {
 
@@ -133,9 +133,11 @@ public class UserInput {
             }else if(dessert == "Chocolate Moose"){
                 TotPrice = TotPrice + 20;
             }
-
         }catch(Exception e){
             System.out.println(e.toString());
+        }
+        if(amountOfPeople >= 40){
+            TotPrice =  TotPrice * 0.85;
         }
 
         Booking b = new Booking(amountOfPeople, adultMeal, kidsMeal, drink, dessert);
