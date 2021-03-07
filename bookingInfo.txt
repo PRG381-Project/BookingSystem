@@ -1,6 +1,0 @@
-[Amount of People: 10	 Adult meal: dinner	 Kids meal:chicken Drink: coke	 Dessert: cake] [Event type: Wedding	 Event date: Sun Feb 02 00:00:00 CAT 2020	 Event address: 5 blablabla]
-[Amount of People: 25	 Adult meal: Burgers	 Kids meal:Chips Drink: Beer	 Dessert: Ice cream] [Event type: Wedding	 Event date: Fri Feb 12 00:00:00 SAST 2021	 Event address: 34 Birdie Street]
-[Amount of People: 30	 Adult meal: Pizza	 Kids meal:Fish fingers Drink: Fanta	 Dessert: Cheese cake] [Event type: Birthday	 Event date: Fri Oct 15 00:00:00 SAST 2021	 Event address: 45 Loop Street]
-[Amount of People: 20	 Adult meal: Burgers	 Kids meal:Pizza Drink: Beer	 Dessert: Ice cream] [Event type: Funeral	 Event date: Wed May 12 00:00:00 SAST 2021	 Event address: 56 Walk Ave]
-[Amount of People: 25	 Adult meal: Burgers	 Kids meal:Pizza Drink: Wine	 Dessert: Cheese cake] [Event type: Wedding	 Event date: Sun Jun 12 00:00:00 SAST 2022	 Event address: 46 Strike close]
-[Amount of People: 23	 Adult meal: Pasta	 Kids meal:Burgers Drink: Coke	 Dessert: Ice cream] [Event type: Business Event	 Event date: Sat May 01 00:00:00 SAST 2021	 Event address: 23 Pro Street]
